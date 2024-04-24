@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "864320286237",
+    "project_id": "react-native-push-app-83128",
+    "storage_bucket": "react-native-push-app-83128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864320286237:android:35be3ed7aa3f91027d60f4",
+        "android_client_info": {
+          "package_name": "com.pushapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEt5fzEc5Y3iJF-qqE5JbTM38nbf7wYbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
