@@ -18,6 +18,7 @@ import messaging from '@react-native-firebase/messaging';
 import { firebase } from '@react-native-firebase/messaging';
 import PdfScreen from './screen/PdfScreen';
 import PdfView from './screen/Widgets/pdfView';
+import LoginScreen from './screen/LoginScreen';
 function App() {
   // async function requestUserPermission() {
   //   const authStatus = await messaging().requestPermission();
@@ -44,8 +45,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Home'>
-        <Stack.Screen name='Home' component={HomeScreen}></Stack.Screen>
+        initialRouteName='Sign'>
+        <Stack.Screen name='Sign' component={LoginScreen}></Stack.Screen>
+        <Stack.Screen name='Login' component={HomeScreen}></Stack.Screen>
         <Stack.Screen name='PopUp' component={PopUpScreen}></Stack.Screen>
         <Stack.Screen name='PDFUploader' component={PdfScreen}></Stack.Screen>
         <Stack.Screen name='PdfView' component={PdfView}></Stack.Screen>

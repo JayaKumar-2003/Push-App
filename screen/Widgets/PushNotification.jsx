@@ -1,9 +1,9 @@
 import PushNotification from 'react-native-push-notification'
 
-const LocalNotification = (setPin) => {
+const LocalNotification = () => {
     const key = Date.now().toString(); 
     const randomNumber = Math.floor(100000 + Math.random() * 900000);// Key must be unique everytime
-    setPin(randomNumber)
+    // setPin(randomNumber)
     PushNotification.createChannel(
         {
             channelId: key, // (required)
@@ -19,6 +19,7 @@ const LocalNotification = (setPin) => {
         title: 'Push App',
         message: `Generated Pin: ${randomNumber} `,
     })
+    return randomNumber
 };
 
 export default LocalNotification
