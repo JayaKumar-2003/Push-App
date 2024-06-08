@@ -50,7 +50,7 @@ function App() {
         <Stack.Screen name='Login' component={HomeScreen}></Stack.Screen>
         <Stack.Screen name='PopUp' component={PopUpScreen}></Stack.Screen>
         <Stack.Screen name='PDFUploader' component={PdfScreen}></Stack.Screen>
-        <Stack.Screen name='PdfView' component={PdfView}></Stack.Screen>
+        {/* <Stack.Screen name='PdfView' component={PdfView}></Stack.Screen> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

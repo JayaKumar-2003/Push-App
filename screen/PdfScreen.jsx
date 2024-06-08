@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Dimensions, View, Button } from 'react-native';
 import Pdf from 'react-native-pdf';
 import DocumentPicker from 'react-native-document-picker';
+import { previewFile } from './Widgets/pdfView';
 const PdfScreen = ({ navigation }) => {
   const [numberOfPages, setNumberOfPages] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,8 +29,9 @@ const PdfScreen = ({ navigation }) => {
         type: DocumentPicker.types.allFiles, //You can mention all the file types required here
         copyTo: 'cachesDirectory',
       }).then(res => {
-        setPdfView(res);
-        navigation.navigate('PdfView', { pdf: res })
+        // setPdfView(res);
+        // navigation.navigate('PdfView', { pdf: res })
+        previewFile(res)
       })
 
     }
